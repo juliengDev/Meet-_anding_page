@@ -1,0 +1,24 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  color: var(--color-pure-white);
+  padding: 1.6em 3em;
+  font-weight: 900;
+  font-size: 1.6rem;
+  border: none;
+  text-decoration: none;
+  &__green-default {
+    background-color: var(--color-dark-green);
+  }
+  &__green-activ {
+    background-color: var(--color-light-green);
+  }
+  &__purple-default {
+    background-color: var(--color-dark-purple);
+  }
+  &__purple-activ {
+    background-color: var(--color-light-purple);
+  }
+}
