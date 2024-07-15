@@ -24,45 +24,74 @@
         </g>
       </svg>
       <section class="hero">
-        <img class="hero__banner__left" src="./assets/desktop/image-hero-left.png" alt="Image Hero Banner Left">
+        <img class="hero__images--desktop hero__images--desktop-left" src="./assets/desktop/image-hero-left.png"
+          alt="Image Hero Banner Left">
+        <picture class="hero__images--mobile">
+          <source media="(min-width: 1240px)" srcset="./assets/tablet/image-hero.png">
+          <img src="./assets/tablet/image-hero.png" alt="Hero image for mobile and tablet">
+        </picture>
         <div class="hero__heading">
           <h1 class="hero__heading__main ft-primary-heading">Group Chat for Everyone</h1>
           <p class="hero__heading__intro">Meet makes it easy to connect with others face-to-face virtually and
             collaborate across any device.</p>
           <div class="hero__heading__btngrp">
-            <button class="btn btn__green-default">Download v1.3</button>
+            <button class="btn btn__green-default">Download<span class="cl-cyan">v1.3</span></button>
             <button class="btn btn__purple-default">What is it?</button>
           </div>
         </div>
-        <img class="hero__banner__right" src="./assets/desktop/image-hero-right.png" alt="Image Hero Banner Right">
+        <img class="hero__images--desktop hero__images--desktop-right" src="./assets/desktop/image-hero-right.png"
+          alt="Image Hero Banner Right">
+
+
+
+
+
       </section>
-
     </header>
-    <main></main>
+    <main>
+      <section class="number">
+        <span class="number__line"></span>
+        <span class="number__item">01</span>
+      </section>
+      <section class="gallery grid">
+        <img src="./assets/desktop/image-woman-in-videocall.jpg" alt="Picture of a woman in videocall"
+          class="gallery__item"><img src="./assets/desktop/image-women-videochatting.jpg"
+          alt="Picture of womans in videochatting" class="gallery__item"><img
+          src="./assets/desktop/image-men-in-meeting.jpg" alt="picture of a man in videocall" class="gallery__item"><img
+          src="./assets/desktop/image-man-texting.jpg" alt="picture of a man texting" class="gallery__item">
+      </section>
+      <section class="content">
+        <p class="content__intro ft-tertiary-heading">Built for modern use</p>
+        <h2 class=" content__title ft-secondary-heading"> Smarter meetings, all in one place</h2>
+        <p class="content__txt">Send messages, share files, show your screen, and record your meetings — all in one
+          workspace. Control who can join with invite-only team access, data encryption, and data export.</p <section
+          class="number">
+      </section>
+      <section class="number number-above">
+        <span class="number__line"></span>
+        <span class="number__item">02</span>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <h2 class="ft-secondary-heading footer__title "> Experience more toget her</h2>
+      <p class="footer__txt"> Stay connected with reliable HD meetings and unlimited one-on-one and group video
+        sessions.</p>
+      <button class="btn footer__btn btn__purple-default">Download <span class="cl-purple">v1.3</span></button>
+
+    </footer>
 
 
 
 
 
-    01
-    Built for modern use
 
-    Smarter meetings, all in one place
-
-    Send messages, share files, show your screen, and record your meetings — all in one
-    workspace. Control who can join with invite-only team access, data encryption, and data export.
-
-    02
-    Experience more together
-    Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
-
-    Download v1.3
-    <footer class="attribution">
+    <div class="attribution">
       Challenge by <a class="attribution__credit" href="https://www.frontendmentor.io?ref=challenge"
         target="_blank">Frontend
         Mentor</a>.
       Coded by <a class="attribution__credit" href="#">Julien Gilbert</a>.
-    </footer>
+    </div>
   </div>
 </body>
 

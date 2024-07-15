@@ -1,10 +1,49 @@
+.footer {
+  text-align: start;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 11.6rem min(11.1rem) 10.4rem;
+  background-image: url("../../assets/desktop/image-footer.jpg");
+  color: var(--color-footer);
+
+  &__title,
+  &__txt,
+  &__btn {
+    z-index: 1;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-dark-green);
+    opacity: 0.8;
+    pointer-events: none;
+    z-index: 0;
+  }
+  &__title,
+  &__txt {
+    width: min(35rem, 100%);
+  }
+  &__title {
+    color: var(--color-footer);
+  }
+}
+.footer .btn {
+  width: min(19.3rem, 100%);
+  max-height: 58px;
+}
+
 .attribution {
   margin: 1.6rem 0 6rem;
   font-size: 1.1rem;
   text-align: center;
-  color: var(--color-wenge-brown);
+  color: var(--color-dark-green);
   &__credit {
     font-weight: 800;
-    color: var(--color-dark-raspberry) !important;
+    color: var(--color-dark-purple) !important;
   }
 }

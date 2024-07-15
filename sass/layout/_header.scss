@@ -1,11 +1,43 @@
 .header {
+  width: 100%;
+  margin-bottom: 11rem;
   &__logo {
     margin-bottom: 6.1rem;
   }
   & .hero {
+    position: relative;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 0.7rem;
+    @include respond(tab-land) {
+      flex-direction: column;
+    }
+
+    &__images--mobile {
+      display: none;
+      @include respond(tab-land) {
+        display: block;
+      }
+    }
+    &__images--desktop {
+      display: block;
+      position: absolute;
+      top: 0;
+      &-left {
+        left: -1.5%;
+      }
+      &-right {
+        right: -1.5%;
+      }
+      @include respond(tab-land) {
+        display: none;
+      }
+    }
     img {
+      @include respond(tab-land) {
+        width: 100%;
+      }
       max-inline-size: 100%;
       block-size: auto;
       object-fit: contain;
@@ -15,7 +47,7 @@
       flex-direction: column;
       align-items: center;
       width: min(43rem, 100%);
-      margin: 4.7rem auto;
+      margin: 4.7rem auto 0;
       &__main {
         margin-bottom: 3.4rem;
       }

@@ -25,4 +25,17 @@
   justify-content: center;
   align-items: center;
   margin: 8rem auto 0;
+  overflow-x: hidden;
+}
+.cl-cyan {
+  color: var(--color-light-blue);
+}
+.cl-purple {
+  color: var(--color-light-purple2);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
 }
