@@ -19,7 +19,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 :root {
   --color-dark-charcoal: #28283d;
-  --color-dark-grey: #;
+  --color-dark-grey: #87879d;
   --color-dark-green: #4d96a9;
   --color-light-green: #71c0d4;
   --color-dark-purple: #855fb1;
@@ -95,6 +95,12 @@ body {
   font-size: clamp(5.9rem, 1.5vw, 6.4rem);
   line-height: 6.4rem;
 }
+@media only screen and (max-width: 37.5em) {
+  .ft-primary-heading {
+    font-size: clamp(3.5rem, 1.5vw, 4rem);
+    line-height: 4.4rem;
+  }
+}
 
 .ft-secondary-heading {
   color: var(--color-dark-charcoal);
@@ -139,8 +145,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 8rem auto 0;
   overflow-x: hidden;
+  margin: 8rem auto 0;
+}
+@media only screen and (max-width: 77.5em) {
+  .container {
+    margin: 5.1rem auto 0;
+  }
 }
 
 .cl-cyan {
@@ -156,6 +167,11 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
 }
+@media only screen and (max-width: 37.5em) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 .header {
   width: 100%;
@@ -163,6 +179,11 @@ body {
 }
 .header__logo {
   margin-bottom: 6.1rem;
+}
+@media only screen and (max-width: 77.5em) {
+  .header__logo {
+    margin-bottom: 5.4rem;
+  }
 }
 .header .hero {
   position: relative;
@@ -190,10 +211,20 @@ body {
   top: 0;
 }
 .header .hero__images--desktop-left {
-  left: -1.5%;
+  left: 0;
+}
+@media only screen and (max-width: 90em) {
+  .header .hero__images--desktop-left {
+    left: -1.5%;
+  }
 }
 .header .hero__images--desktop-right {
-  right: -1.5%;
+  right: 0;
+}
+@media only screen and (max-width: 90em) {
+  .header .hero__images--desktop-right {
+    right: -1.5%;
+  }
 }
 @media only screen and (max-width: 77.5em) {
   .header .hero__images--desktop {
@@ -220,22 +251,49 @@ body {
 .header .hero__heading__main {
   margin-bottom: 3.4rem;
 }
+@media only screen and (max-width: 77.5em) {
+  .header .hero__heading__main {
+    margin-bottom: 2.4rem;
+  }
+}
 .header .hero__heading__intro {
   margin-bottom: 3.2rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .header .hero__heading__intro {
+    width: min(32.7rem, 70%);
+    line-height: 2.6rem;
+  }
 }
 .header .hero__heading__btngrp {
   display: flex;
   gap: 1.6rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .header .hero__heading__btngrp {
+    flex-direction: column;
+  }
 }
 
 .footer {
   text-align: start;
   position: relative;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 11.6rem 11.1rem 10.4rem;
   background-image: url("../../assets/desktop/image-footer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   color: var(--color-footer);
+}
+@media only screen and (max-width: 37.5em) {
+  .footer {
+    text-align: center;
+    flex-direction: column;
+    padding: 9.2rem 2.4rem 7.2rem;
+  }
 }
 .footer__title, .footer__txt, .footer__btn {
   z-index: 1;
@@ -258,10 +316,18 @@ body {
 .footer__title {
   color: var(--color-footer);
 }
-
-.footer .btn {
-  width: min(19.3rem, 100%);
-  max-height: 58px;
+@media only screen and (max-width: 37.5em) {
+  .footer__title {
+    width: 80%;
+    font-size: clamp(2.7rem, 1.5vw, 3.2rem);
+    margin-bottom: 2.4rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .footer__txt {
+    width: 70%;
+    margin-bottom: 3.2rem;
+  }
 }
 
 .attribution {
@@ -276,7 +342,7 @@ body {
 }
 
 .btn {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   gap: 0.4rem;
@@ -287,6 +353,7 @@ body {
   font-size: 1.6rem;
   border: none;
   text-decoration: none;
+  white-space: nowrap;
 }
 .btn__green-default {
   background-color: var(--color-dark-green);
@@ -347,6 +414,11 @@ body {
   width: min(54rem, 100%);
   margin: 8rem auto 7.2rem;
   text-align: center;
+}
+@media only screen and (max-width: 37.5em) {
+  .content {
+    margin: 6rem auto 6.4 rem;
+  }
 }
 .content__intro {
   margin: 0 auto 1.6rem;

@@ -29,6 +29,10 @@ body {
   font-weight: 900;
   font-size: clamp(5.9rem, 1.5vw, 6.4rem);
   line-height: 6.4rem;
+  @include respond(phone) {
+    font-size: clamp(3.5rem, 1.5vw, 4rem);
+    line-height: 4.4rem;
+  }
 }
 .ft-secondary-heading {
   color: var(--color-dark-charcoal);

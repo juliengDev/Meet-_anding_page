@@ -13,6 +13,9 @@
   width: min(54rem, 100%);
   margin: 8rem auto 7.2rem;
   text-align: center;
+  @include respond(phone) {
+    margin: 6rem auto 6.4 rem;
+  }
   &__intro {
     margin: 0 auto 1.6rem;
   }

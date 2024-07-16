@@ -24,8 +24,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 8rem auto 0;
   overflow-x: hidden;
+  margin: 8rem auto 0;
+
+  @include respond(tab-land) {
+    margin: 5.1rem auto 0;
+  }
 }
 .cl-cyan {
   color: var(--color-light-blue);
@@ -38,4 +42,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
+  @include respond(phone) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

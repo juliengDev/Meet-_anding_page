@@ -3,6 +3,9 @@
   margin-bottom: 11rem;
   &__logo {
     margin-bottom: 6.1rem;
+    @include respond(tab-land) {
+      margin-bottom: 5.4rem;
+    }
   }
   & .hero {
     position: relative;
@@ -25,10 +28,18 @@
       position: absolute;
       top: 0;
       &-left {
-        left: -1.5%;
+        left: 0;
+
+        @include respond(desktop) {
+          left: -1.5%;
+        }
       }
       &-right {
-        right: -1.5%;
+        right: 0;
+
+        @include respond(desktop) {
+          right: -1.5%;
+        }
       }
       @include respond(tab-land) {
         display: none;
@@ -50,13 +61,23 @@
       margin: 4.7rem auto 0;
       &__main {
         margin-bottom: 3.4rem;
+        @include respond(tab-land) {
+          margin-bottom: 2.4rem;
+        }
       }
       &__intro {
         margin-bottom: 3.2rem;
+        @include respond(phone) {
+          width: min(32.7rem, 70%);
+          line-height: 2.6rem;
+        }
       }
       &__btngrp {
         display: flex;
         gap: 1.6rem;
+        @include respond(phone) {
+          flex-direction: column;
+        }
       }
     }
   }

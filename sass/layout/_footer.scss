@@ -2,11 +2,20 @@
   text-align: start;
   position: relative;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 11.6rem min(11.1rem) 10.4rem;
   background-image: url("../../assets/desktop/image-footer.jpg");
+  background-size: cover;
+  // aspect-ratio: 4/1;
+  background-repeat: no-repeat;
+  background-position: center;
   color: var(--color-footer);
-
+  @include respond(phone) {
+    text-align: center;
+    flex-direction: column;
+    padding: 9.2rem 2.4rem 7.2rem;
+  }
   &__title,
   &__txt,
   &__btn {
@@ -30,11 +39,18 @@
   }
   &__title {
     color: var(--color-footer);
+    @include respond(phone) {
+      width: 80%;
+      font-size: clamp(2.7rem, 1.5vw, 3.2rem);
+      margin-bottom: 2.4rem;
+    }
   }
-}
-.footer .btn {
-  width: min(19.3rem, 100%);
-  max-height: 58px;
+  &__txt {
+    @include respond(phone) {
+      width: 70%;
+      margin-bottom: 3.2rem;
+    }
+  }
 }
 
 .attribution {
