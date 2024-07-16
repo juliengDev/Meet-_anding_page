@@ -11,10 +11,10 @@
 
 .content {
   width: min(54rem, 100%);
-  margin: 8.5rem auto 4rem;
+  margin: 8.2rem auto 4rem;
   text-align: center;
   @include respond(phone) {
-    margin: 6rem auto 6.4 rem;
+    margin: 6rem auto 6.4rem;
   }
   &__intro {
     margin: 0 auto 1.6rem;

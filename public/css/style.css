@@ -86,6 +86,7 @@ body {
   font-weight: 500;
   line-height: 2.6rem;
   color: var(--color-dark-grey);
+  background-color: #fafafa;
   text-align: center;
 }
 
@@ -413,12 +414,12 @@ body {
 
 .content {
   width: min(54rem, 100%);
-  margin: 8.5rem auto 4rem;
+  margin: 8.2rem auto 4rem;
   text-align: center;
 }
 @media only screen and (max-width: 37.5em) {
   .content {
-    margin: 6rem auto 6.4 rem;
+    margin: 6rem auto 6.4rem;
   }
 }
 .content__intro {
