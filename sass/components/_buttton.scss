@@ -11,16 +11,21 @@
   border: none;
   text-decoration: none;
   white-space: nowrap;
-  &__green-default {
+  transition: background-color 0.3s ease;
+  &:hover {
+    cursor: pointer;
+  }
+  &__green {
     background-color: var(--color-dark-green);
+    &:hover {
+      background-color: var(--color-light-green);
+    }
   }
-  &__green-activ {
-    background-color: var(--color-light-green);
-  }
-  &__purple-default {
+
+  &__purple {
     background-color: var(--color-dark-purple);
-  }
-  &__purple-activ {
-    background-color: var(--color-light-purple);
+    &:hover {
+      background-color: var(--color-light-purple);
+    }
   }
 }
