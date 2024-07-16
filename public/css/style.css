@@ -332,17 +332,6 @@ body {
   }
 }
 
-.attribution {
-  margin: 1.6rem 0 6rem;
-  font-size: 1.1rem;
-  text-align: center;
-  color: var(--color-dark-green);
-}
-.attribution__credit {
-  font-weight: 800;
-  color: var(--color-dark-purple) !important;
-}
-
 .btn {
   display: inline-flex;
   justify-content: center;
